@@ -1,3 +1,3 @@
-# Sphinx Next Level
+# Sphinx
 
-This project is under heavy development.
+David J Nevin is working on a Sphinx project.
