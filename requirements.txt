@@ -1,2 +1,3 @@
 sphinx~=4.2.0
-
+rst-to-myst
+myst_parser
