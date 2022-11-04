@@ -11,10 +11,17 @@
 This site is under heavy delvelopment.
 ```
 
+For more information read {doc}`usage`.
+
+For installation instructions read {ref}`Installation`
+
 ```{toctree}
 :caption: 'Contents:'
 :maxdepth: 2
+
+usage
 ```
+
 
 # Indices and tables
 
