@@ -13,16 +13,13 @@ This site is under heavy delvelopment.
 
 For more information read {doc}`usage`.
 
-For installation instructions read {ref}`Installation`
+For installation instructions read {ref}`Installation`.
 
 ```{toctree}
 :caption: 'Contents:'
 :maxdepth: 2
 
 usage
+notebooks/TheZenOfPython
 ```
 
-
-# Indices and tables
-
-- {ref}`search`
