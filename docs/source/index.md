@@ -21,10 +21,16 @@ For installation instructions read {ref}`Installation`.
 
 ```{toctree}
 :caption: 'Contents:'
-:maxdepth: 2
+:maxdepth: 3
 
 usage
 notebooks/TheZenOfPython
+modules
 ```
 
+# Indices and tables
 
+```{eval-rst}
+* :ref:`genindex`
+* :ref:`modindex`
+```
