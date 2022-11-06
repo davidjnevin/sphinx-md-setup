@@ -11,10 +11,6 @@
 This site is under heavy delvelopment.
 ```
 
-A link to a particular function.
-
-{py:func}`attendee.get_random_attendee`
-
 For more information read {doc}`usage`.
 
 For installation instructions read {ref}`Installation`.

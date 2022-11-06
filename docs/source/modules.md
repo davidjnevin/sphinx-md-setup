@@ -1,4 +1,4 @@
-# Code Base
+# Modules
 
 ```{toctree}
 :maxdepth: 4
