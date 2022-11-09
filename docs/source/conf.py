@@ -66,5 +66,5 @@ html_theme = "furo"
 html_static_path = ["_static"]
 
 # Text Snippets
-
-myst_substitutions: dict[str, str] = replace_snippets()
+snippets_active = True
+myst_substitutions: dict[str, str] = replace_snippets(snippets_active)
