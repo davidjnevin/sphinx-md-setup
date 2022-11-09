@@ -15,9 +15,16 @@ from snippets import replace_snippets
 
 # -- Project information -----------------------------------------------------
 
-project: str = "Sphinx"
+project: str = "Undestanding Sphinx"
 author: str = "David J Nevin"
 copyright: str = f"{time.strftime('%Y')}, {author}"
+snippets_active = True
+myst_title_to_header = True
+html_title = project
+
+# Create todo lists
+todo_include_todos = True
+
 
 # The full version, including alpha/beta/rc tags
 release = "0.1.0"
@@ -31,6 +38,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.intersphinx",
+    "sphinx.ext.todo",
     # external extensions
     "myst_parser",
     "nbsphinx",
@@ -66,5 +74,4 @@ html_theme = "furo"
 html_static_path = ["_static"]
 
 # Text Snippets
-snippets_active = True
 myst_substitutions: dict[str, str] = replace_snippets(snippets_active)

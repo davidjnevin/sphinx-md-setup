@@ -11,9 +11,7 @@
 This site is under heavy delvelopment.
 ```
 
-So is this line appearing?
-
-hello, {{project}} on this page.
+This is a substitution of the key `{{mysite}}` -> {{mysite}}.
 
 For more information read {doc}`usage`.
 
@@ -26,6 +24,8 @@ For installation instructions read {ref}`Installation`.
 usage
 notebooks/TheZenOfPython
 modules
+todolist
+
 ```
 
 ## Indices and tables

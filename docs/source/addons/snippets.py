@@ -9,6 +9,7 @@ def replace_snippets(active=False) -> dict[str, str]:
     if active:
         myst_substitutions: dict[str, str] = {
             "project": "I'm a **substitution**",
+            "mysite": "[davidjnevin](https://www.davidjnevin.com)",
         }
     else:
         myst_substitutions: dict[str, str] = {}
