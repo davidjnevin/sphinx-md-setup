@@ -24,7 +24,7 @@ notebooks/TheZenOfPython
 modules
 ```
 
-# Indices and tables
+## Indices and tables
 
 ```{eval-rst}
 * :ref:`genindex`

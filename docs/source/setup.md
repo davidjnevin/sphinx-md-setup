@@ -1,7 +1,7 @@
-# attendee module
+# setup module
 
 ```{eval-rst}
-.. automodule:: attendee
+.. automodule:: setup
    :members:
    :undoc-members:
    :show-inheritance:

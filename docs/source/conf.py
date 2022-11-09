@@ -1,8 +1,4 @@
 # Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # -- Path setup --------------------------------------------------------------
 
@@ -10,17 +6,15 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
+import os, sys, time
 
 sys.path.insert(0, os.path.abspath("../../src"))
 
-
 # -- Project information -----------------------------------------------------
 
-project = "Sphinx"
-copyright = "2022, David J Nevin"
-author = "David J Nevin"
+project: str = "Sphinx"
+author: str = "David J Nevin"
+copyright: str = f"{time.strftime('%Y')}, David J Nevin"
 
 # The full version, including alpha/beta/rc tags
 release = "0.1.0"
@@ -32,17 +26,21 @@ release = "0.1.0"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "myst_parser",
     "sphinx.ext.duration",
     "sphinx.ext.autosectionlabel",
-    "nbsphinx",
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.intersphinx",
+    # external extensions
+    "myst_parser",
+    "nbsphinx",
 ]
 
 # Intersphinx Mapping
-intersphinx_mapping = {"python": ("https://docs.python.org/3", None)}
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/3", None),
+    "sphinx": ("https://sphinx-doc.org/en/master/", None),
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
