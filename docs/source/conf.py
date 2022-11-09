@@ -8,11 +8,10 @@
 #
 import os, sys, time
 
-# from .addons import snippets.replace_snippets
-
 sys.path.insert(0, os.path.abspath("../../src"))
-
 sys.path.insert(0, os.path.abspath("./addons"))
+
+from snippets import replace_snippets
 
 # -- Project information -----------------------------------------------------
 
@@ -68,4 +67,4 @@ html_static_path = ["_static"]
 
 # Text Snippets
 
-myst_substitutions: dict[str, str] = snippets.replace_snippets()
+myst_substitutions: dict[str, str] = replace_snippets()
