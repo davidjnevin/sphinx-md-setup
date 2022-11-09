@@ -8,15 +8,17 @@
 #
 import os, sys, time
 
-from .include.snippets import replace_snippets
+# from .addons import snippets.replace_snippets
 
 sys.path.insert(0, os.path.abspath("../../src"))
+
+sys.path.insert(0, os.path.abspath("./addons"))
 
 # -- Project information -----------------------------------------------------
 
 project: str = "Sphinx"
 author: str = "David J Nevin"
-copyright: str = f"{time.strftime('%Y')}, David J Nevin"
+copyright: str = f"{time.strftime('%Y')}, {author}"
 
 # The full version, including alpha/beta/rc tags
 release = "0.1.0"
@@ -36,7 +38,6 @@ extensions = [
 ]
 
 myst_enable_extensions = [
-    "colon_fence",
     "substitution",
 ]
 
@@ -67,4 +68,4 @@ html_static_path = ["_static"]
 
 # Text Snippets
 
-# myst_substitutions = {"project": "I'm a **substitution**"}
+myst_substitutions: dict[str, str] = snippets.replace_snippets()

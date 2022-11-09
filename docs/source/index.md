@@ -13,7 +13,7 @@ This site is under heavy delvelopment.
 
 So is this line appearing?
 
-hello, {{project}} is the name of my project.
+hello, `{{project}}` on this page.
 
 For more information read {doc}`usage`.
 
