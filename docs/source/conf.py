@@ -28,6 +28,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.intersphinx",
+    "colon_fence",
     # external extensions
     "myst_parser",
     "nbsphinx",
@@ -57,3 +58,10 @@ html_theme = "furo"
 # Existing files arr overwriten.
 
 html_static_path = ["_static"]
+
+# Text Snippets
+
+rst_epilog: str = f"""
+.. |project| replace:: {project}
+.. |dfb| replace:: Don't forget to backup before proceeding.
+"""
