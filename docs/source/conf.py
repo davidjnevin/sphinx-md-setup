@@ -8,6 +8,8 @@
 #
 import os, sys, time
 
+from .include.snippets import replace_snippets
+
 sys.path.insert(0, os.path.abspath("../../src"))
 
 # -- Project information -----------------------------------------------------
@@ -28,10 +30,14 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.intersphinx",
-    "colon_fence",
     # external extensions
     "myst_parser",
     "nbsphinx",
+]
+
+myst_enable_extensions = [
+    "colon_fence",
+    "substitution",
 ]
 
 # Intersphinx Mapping
@@ -61,7 +67,4 @@ html_static_path = ["_static"]
 
 # Text Snippets
 
-rst_epilog: str = f"""
-.. |project| replace:: {project}
-.. |dfb| replace:: Don't forget to backup before proceeding.
-"""
+# myst_substitutions = {"project": "I'm a **substitution**"}
