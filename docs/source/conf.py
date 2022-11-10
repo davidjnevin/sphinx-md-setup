@@ -24,6 +24,7 @@ html_title = project
 
 # Create todo lists
 todo_include_todos = True
+todo_link_only = True
 
 
 # The full version, including alpha/beta/rc tags
@@ -39,6 +40,7 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
+    "sphinx.ext.viewcode",
     # external extensions
     "myst_parser",
     "nbsphinx",
@@ -46,6 +48,7 @@ extensions = [
 
 myst_enable_extensions = [
     "substitution",
+    "html_admonition",
 ]
 
 # Intersphinx Mapping
