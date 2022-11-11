@@ -11,3 +11,17 @@ Features included:
 - Active todolist from code base comments
 - Google docstring ready
 - Using [Furo](https://pradyunsg.me/furo) theme
+
+*Requirements.txt* contains the pip requirements.
+
+## To install
+
+[Install sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html)
+
+Clone the repo.
+
+Run pip -r requirements.txt
+
+Create "_source" folder in "source".
+
+Should be goog to go. 
