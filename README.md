@@ -22,6 +22,6 @@ Clone the repo.
 
 Run pip -r requirements.txt
 
-Create "_source" folder in "source".
+Delete `empty.txt' from "_static" folder.
 
 Should be good to go. 
