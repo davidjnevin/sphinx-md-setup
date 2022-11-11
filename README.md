@@ -16,7 +16,7 @@ Features included:
 
 ## To install
 
-[Install sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html)
+[Install Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html)
 
 Clone the repo.
 
@@ -24,4 +24,4 @@ Run pip -r requirements.txt
 
 Create "_source" folder in "source".
 
-Should be goog to go. 
+Should be good to go. 
